@@ -16,20 +16,23 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.most-viewed li {
+.list-of-curated-links  li {
   line-height: 200%;
   font-weight: bolder;
   list-style-type: none;
+}
+
+.no-marg {
   margin-left: -40px;
 }
 
-.most-viewed ul {
+.list-of-curated-links  ul {
   padding-bottom: 30px;
 }
 
 
-.most-viewed a, a:visited {
-  font-size: 120%;
+.list-of-curated-links a, a:visited {
+  font-size: 105%;
   text-decoration: none;
 }
 
@@ -37,4 +40,23 @@ $govuk-assets-path: '/govuk/assets/';
   height: 10px;
   background: #1E1348;
   margin-bottom: 30px;
+}
+
+.translation-wrapper {
+  padding-bottom: 30px;
+}
+
+.translation p {
+  color: $govuk-secondary-text-colour;
+  margin-bottom: 4px;
+}
+
+.translation {
+  border-bottom: 1px solid  $govuk-border-colour;
+  width: 23%;
+  margin-bottom: 10px;
+}
+
+.translation-divider {
+  color:  govuk-colour("mid-grey");
 }
