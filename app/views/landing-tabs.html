@@ -11,67 +11,60 @@
     <div class="govuk-grid-column-full">
 
       <div class="translation-wrapper">
-      <div class="translation">
-      <p class="govuk-body-s">
-      English &nbsp; <span class="translation-divider">|</span> &nbsp;  <a href="#">Cymraeg</a>
-      </p>
-      </div>
+        <div class="translation">
+          <p class="govuk-body-s">
+            English &nbsp; <span class="translation-divider">|</span> &nbsp;  <a href="#">Cymraeg</a>
+          </p>
+        </div>
       </div>
 
-
-      <h1 class="govuk-heading-xl">
-      Brexit</h1>
+      <h1 class="govuk-heading-xl">Brexit</h1>
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-<p class="govuk-body-l">Some refreshed content should probably go here</p>
-</div>
+          <p class="govuk-body-l">Some refreshed content should probably go here</p>
+        </div>
       </div>
 
-      <div class="brexit-divider">
-        </div>
+      <div class="brexit-divider"></div>
 
       <h2 class="govuk-heading-m">Most viewed</h2>
-      <div class="govuk-list list-of-curated-links no-marg">
-      <ul>
-        <li><a href="#">Get an EORI number</a></li>
-        <li><a href="#">Living and working in the EU</a></li>
-        <li><a href="#">Staying in the UK if you're an EU citizen</a></li>
-        </ul>
-        </div>
 
-        <h2 class="govuk-heading-l">Guidance</h2>
+      <div class="govuk-list list-of-curated-links no-marg">
+        <ul>
+          <li><a href="#">Get an EORI number</a></li>
+          <li><a href="#">Living and working in the EU</a></li>
+          <li><a href="#">Staying in the UK if you're an EU citizen</a></li>
+        </ul>
+      </div>
+
+      <h2 class="govuk-heading-l">Guidance</h2>
 
       <div class="govuk-tabs" data-module="govuk-tabs">
-  <h2 class="govuk-tabs__title">
-    Contents
-  </h2>
-  <ul class="govuk-tabs__list">
-    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#businesses">
-      For businesses
-      </a>
-    </li>
-    <li class="govuk-tabs__list-item">
-      <a class="govuk-tabs__tab" href="#individuals">
-      For individuals and families
-      </a>
-    </li>
-
-  </ul>
-  <div class="govuk-tabs__panel" id="businesses">
-    <h2 class="govuk-heading-m">For businesses</h2>
-    <p>Business content</p>
-
-  </div>
-  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="individuals">
-    <h2 class="govuk-heading-m">For individuals and families</h2>
-  <p>Individuals and families content</p>
-
-  </div>
-</div>
-
-<div class="brexit-divider">
-  </div>
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#businesses">
+            For businesses
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#individuals">
+            For individuals and families
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="businesses">
+          <h2 class="govuk-heading-m">For businesses</h2>
+          {% include "includes/business_accordions.html" %}
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="individuals">
+          <h2 class="govuk-heading-m">For individuals and families</h2>
+          {% include "includes/citizen_accordions.html" %}
+        </div>
+      </div>
+      <div class="brexit-divider"></div>
 
 
       <h2 class="govuk-heading-l">Brexit checker</h2>
