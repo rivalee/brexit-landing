@@ -113,3 +113,35 @@ border: 2px solid $govuk-border-colour;
 float: left;
 margin-bottom: 30px;
 }
+
+.check-change-go-container {
+}
+
+.traffic-lights {
+  width: 350px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.check-change-go {
+  display: inline-block;
+}
+
+.traffic-light1 {
+  background: pink;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.traffic-light2 {
+  background: yellow;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.traffic-light3 {
+  background: blue;
+  display: inline-block;
+  padding-right: 20px;
+
+}
