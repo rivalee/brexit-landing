@@ -143,5 +143,11 @@ margin-bottom: 30px;
   background: blue;
   display: inline-block;
   padding-right: 20px;
-
 }
+
+.govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    border-bottom: 10px solid #ff003b;
+  }
