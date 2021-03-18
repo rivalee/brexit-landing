@@ -1,0 +1,180 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+@import "patterns/accordion";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.list-of-curated-links  li {
+  line-height: 200%;
+  font-weight: bolder;
+  list-style-type: none;
+}
+
+.no-marg {
+  margin-left: -40px;
+}
+
+.list-of-curated-links  ul {
+  padding-bottom: 30px;
+}
+
+
+.list-of-curated-links a, a:visited {
+  font-size: 105%;
+  text-decoration: none;
+}
+
+.brexit-divider {
+  height: 10px;
+  background: #1E1348;
+  margin-bottom: 30px;
+}
+
+.translation-wrapper {
+  padding-bottom: 30px;
+}
+
+.translation p {
+  color: $govuk-secondary-text-colour;
+  margin-bottom: 4px;
+}
+
+.translation {
+  border-bottom: 1px solid  $govuk-border-colour;
+  width: 23%;
+  margin-bottom: 10px;
+}
+
+.translation-divider {
+  color:  govuk-colour("mid-grey");
+}
+
+.primary-list-action {
+margin-botton: 20px;
+}
+
+.jarrow {
+  width: 30px;
+  height: 30px;
+	background: url(/public/images/jarrow.png);
+    background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: 0 0px;
+  float: left;
+}
+
+.hacky-spacer {
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+.page-section {
+  margin-bottom: 30px;
+}
+
+.line {
+  height: 1px solid $govuk-border-colour;
+  background: pink;
+}
+
+.document-container {
+  margin: 0 auto;
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+
+.document-text {
+  height: 150px;
+}
+
+.documents-icon {
+  width: 100px;
+  height: 130px;
+  margin-right: 30px;
+  background: url(/public/images/pub-cover-html.png);
+  background-repeat: no-repeat;
+background-size: 100px auto;
+background-position: 0 0px;
+border: 2px solid $govuk-border-colour;
+float: left;
+margin-bottom: 30px;
+}
+
+.check-change-go-container {
+}
+
+.traffic-lights {
+  width: 350px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.check-change-go {
+  display: inline-block;
+}
+
+.traffic-light1 {
+  background: pink;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.traffic-light2 {
+  background: yellow;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.traffic-light3 {
+  background: blue;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    border-bottom: 10px solid #ff003b;
+  }
+
+
+.anchor-menu {
+  margin-bottom: 30px;
+  line-height: 1em !important;
+}
+
+.govuk-list {
+}
+
+
+.guidance-categories {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.guidance-categories a {
+}
+
+.current {
+  border: 5px solid green;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.govuk-header__link:link, .govuk-header__link:visited {
+    color: #ffffff;
+  }
